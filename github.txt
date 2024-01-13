@@ -1,0 +1,39 @@
+! Title: oneironautd's filters – Minimal GitHub
+! Description: GitHub without distractions, social media and gamification
+! Homepage: https://github.com/oneironautd/filters-for-minimal-web
+! Expires: 7 days
+
+! Hide feeds on dashboard
+github.com##.feed-right-sidebar
+github.com###dashboard
+
+! Hide explore from action menu
+github.com##.ActionListItem:has(.octicon-telescope)
+
+! Hide social media features: following and followers
+github.com##:has(> .user-following-container)
+github.com##.js-profile-editable-area > div:has(.octicon-people)
+github.com##.pagehead li:has(.octicon-people)
+github.com##.search-results-page :is(button, a):has(span:has-text(Follow))
+github.com##.search-results-page li:has(> [aria-label$="followers"])
+github.com##.search-results-page span:has(+ li:has(> [aria-label$="followers"]))
+
+! Hide social media features: stars and stargazers
+github.com##:has(> .starring-container)
+github.com##.pagehead-actions > li:has(.octicon-star)
+github.com##a:has(> .octicon-star)
+github.com##a:has(> .octicon-star) + .pinned-item-meta:style(margin-left: 0px !important;)
+github.com##.search-results-page :is(button, a):has(.octicon-star)
+github.com##.search-results-page li:has(> a[href$="/stargazers"])
+github.com##.search-results-page li:has(> a[href$="/stargazers"]) + span
+
+! Hide watchers
+github.com###repo-notifications-counter
+github.com##.Layout-sidebar a:has(> .octicon-eye)
+
+! Hide achievements
+github.com##.js-profile-editable-replace > div:has(.achievement-badge-sidebar)
+
+! Hide highlights and PRO badge
+github.com##.js-profile-editable-replace > div:has(> h2:has-text(Highlights))
+github.com##:has(> [title="Label: Pro"])
