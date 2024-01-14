@@ -17,3 +17,13 @@ I want to use GitHub for collaborative software development. So I got rid of dis
 ```
 https://raw.githubusercontent.com/oneironautd/filters-for-minimal-web/main/github.txt
 ``` 
+
+## Letterboxd
+
+I want to use Letterboxd to find films to watch, so only films and lists are kept. The film page only shows film details, where to watch, ratings, related movies, and related lists. And the list page only shows films and additional information. Also, the home page is simplified to show only the featured films, while the popular films and lists are on their own pages.
+
+**Note:** I don't have an account on Letterboxd because I don't need one for my purpose. So I am not sure how this filter list works when someone is logged in.
+
+```
+https://raw.githubusercontent.com/oneironautd/filters-for-minimal-web/main/letterboxd.txt
+``` 

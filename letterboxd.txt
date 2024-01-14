@@ -1,0 +1,93 @@
+! Title: oneironautd's filters – Minimal Letterboxd
+! Description: Letterboxd decluttered for film discovery
+! Homepage: https://github.com/oneironautd/filters-for-minimal-web
+! Expires: 7 days
+
+! Hide sign-up, sign-in and promotions
+letterboxd.com##.main-nav .sign-in-menu, .main-nav .create-account-menu
+letterboxd.com##.homepage-welcome, .home-mid-title, .home #highlights, .home .popular-content
+letterboxd.com##.main-nav-lists .create-your-own, .main-nav-lists .title-hero:has(+ .create-your-own)
+letterboxd.com##.promopanelsurround
+
+! Hide Pro ads
+letterboxd.com###services-menu > .-upgrade
+letterboxd.com###watch > .other.-message
+letterboxd.com##.body.-justwatch .aside
+
+! Hide banner and annoyances
+letterboxd.com##.banner
+letterboxd.com##.upgrade-kicker
+
+! Hide footer
+letterboxd.com###page-footer
+
+! Hide popular contents from home page
+letterboxd.com##.home .popular-content + .cols-2
+
+! Hide showdown
+letterboxd.com##.section:has(> a[href="/showdown/"])
+
+! Hide journals
+letterboxd.com##.main-nav .main-nav-journal
+letterboxd.com###latest-news
+letterboxd.com##.film-news
+letterboxd.com##.results > li:has(> .card-summary-journal-article, > .card-summary)
+letterboxd.com###search-filter li:has-text(/Journal articles|Podcast episodes/)
+
+! Hide stories
+letterboxd.com##.stories-section
+letterboxd.com###film-hq-mentions
+letterboxd.com##.results > li:has(> .js-card-summary)
+letterboxd.com###search-filter li:has-text(Stories)
+
+! Hide crew picks on films and lists page
+letterboxd.com###crew-picks-sidebar
+letterboxd.com###crew-lists, #crew-picks
+
+! Hide film stats on bottom and during hover
+letterboxd.com##.film-stats
+letterboxd.com##.poster-meta
+
+! Disable click navigation on ratings histogram chart
+letterboxd.com##.ratings-histogram-chart:active:style(pointer-events: none;)
+
+! Hide film fans count
+letterboxd.com##.ratings-histogram-chart > a[href$="fans/"]
+
+! Hide sub navigation in lists related to a film
+letterboxd.com##.lists-with-film .sub-nav-wrapper
+
+! Hide reviews
+letterboxd.com###popular-reviews
+letterboxd.com###recent-reviews
+letterboxd.com###live-feed
+letterboxd.com##.film-detail-content > .text-slug:has-text(/Show Reviews|Read Review/)
+letterboxd.com##.results > [data-object-name="review"]
+letterboxd.com###search-filter li:has-text(Reviews)
+
+! Hide list stats
+letterboxd.com##.list .attribution-block
+
+! Hide recently liked lists
+letterboxd.com###recently-liked-lists
+
+! Hide comments
+letterboxd.com###comments
+
+! Clean up empty spacing on lists page
+letterboxd.com##.main-nav-lists .content-wrap > .cols-3
+
+! Hide user panel
+letterboxd.com###userpanel
+
+! Hide members
+letterboxd.com##.main-nav .main-nav-people
+letterboxd.com##.section:has(> .section-heading:has-text(Popular Reviewers))
+letterboxd.com##.list-page .person-summary
+letterboxd.com##.results .search-result.-person
+letterboxd.com###search-filter li:has-text(Members or HQs)
+
+! Hide tags
+letterboxd.com##:is(.lists-page, .list-page) .section:has(> .tags)
+letterboxd.com##.results > .search-result.-tag
+letterboxd.com###search-filter li:has-text(Tags)
