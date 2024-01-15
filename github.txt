@@ -40,6 +40,9 @@ github.com##.search-results-page li:has(> a[href$="/stargazers"]) + span
 github.com###repo-notifications-counter
 github.com##.Layout-sidebar a:has(> .octicon-eye)
 
+! Hide user actions on hover cards
+github.com##.Popover [aria-label="User action buttons"]
+
 ! Hide achievements
 github.com##.js-profile-editable-replace > div:has(.achievement-badge-sidebar)
 
