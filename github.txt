@@ -43,6 +43,9 @@ github.com##.Layout-sidebar a:has(> .octicon-eye)
 ! Hide user actions on hover cards
 github.com##.Popover [aria-label="User action buttons"]
 
+! Hide metadata about pinned items
+github.com##.pinned-item-meta
+
 ! Hide achievements
 github.com##.js-profile-editable-replace > div:has(.achievement-badge-sidebar)
 
