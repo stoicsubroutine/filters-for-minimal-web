@@ -18,13 +18,18 @@ github.com##.search-results-page :is(button, a):has(span:has-text(Follow))
 github.com##.search-results-page li:has(> [aria-label$="followers"])
 github.com##.search-results-page span:has(+ li:has(> [aria-label$="followers"]))
 
-! Hide social media features: stars and stargazers
-github.com##:has(> .starring-container)
-github.com##.pagehead-actions > li:has(.octicon-star)
-github.com##a:has(> .octicon-star)
-github.com##a:has(> .octicon-star) + .pinned-item-meta:style(margin-left: 0px !important;)
-github.com##.search-results-page :is(button, a):has(.octicon-star)
-github.com##.search-results-page li:has(> a[href$="/stargazers"])
+! Hide star button
+github.com##.starring-container
+github.com##topic-feeds-toast-trigger
+github.com##:is(.topic, #repository-details-container) .BtnGroup:has(#repo-stars-counter-star)
+github.com##.search-results-page :is(button, a):has-text(Star)
+
+! Hide stars tab
+github.com###stars-tab
+github.com##a[data-tab-item="stars"][data-turbo-frame="user-profile-frame"]
+
+! Hide stargazers
+github.com##a[href$="/stargazers"]
 github.com##.search-results-page li:has(> a[href$="/stargazers"]) + span
 
 ! Hide watchers
