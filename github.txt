@@ -10,11 +10,15 @@ github.com###dashboard
 ! Hide explore from action menu
 github.com##.ActionListItem:has(.octicon-telescope)
 
-! Hide social media features: following and followers
-github.com##:has(> .user-following-container)
-github.com##.js-profile-editable-area > div:has(.octicon-people)
-github.com##.pagehead li:has(.octicon-people)
-github.com##.search-results-page :is(button, a):has(span:has-text(Follow))
+! Hide follow button
+github.com##.user-following-container
+github.com##.js-profile-editable-replace div:has(> .user-following-container)
+github.com##.search-results-page :is(button, a):has-text(Follow)
+
+! Hide followers
+github.com##.topic dt:has-text(Followers) + dd
+github.com##.orghead li:has(> a[href$="/followers"])
+github.com##.js-profile-editable-area div:has(> a[href$="?tab=followers"])
 github.com##.search-results-page li:has(> [aria-label$="followers"])
 github.com##.search-results-page span:has(+ li:has(> [aria-label$="followers"]))
 
