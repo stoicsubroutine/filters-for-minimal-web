@@ -7,8 +7,10 @@
 github.com##.feed-right-sidebar
 github.com###dashboard
 
-! Hide explore from action menu
-github.com##.ActionListItem:has(.octicon-telescope)
+! Hide explore related navigation elements
+github.com##.site-subnav:has(+ div:has(> .topic))
+github.com##li:has(> .AppHeader-context-item[href$="/explore"])
+github.com##.AppHeader .ActionListItem > a[href="/explore"]
 
 ! Hide follow button
 github.com##.user-following-container
