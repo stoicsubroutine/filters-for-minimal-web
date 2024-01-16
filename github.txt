@@ -3,9 +3,8 @@
 ! Homepage: https://github.com/oneironautd/filters-for-minimal-web
 ! Expires: 7 days
 
-! Hide feeds on dashboard
-github.com##.feed-right-sidebar
-github.com###dashboard
+! Hide feeds and footer from the dashboard page
+github.com##.feed-content
 
 ! Hide explore related navigation elements
 github.com##.site-subnav:has(+ div:has(> .topic))
