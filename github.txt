@@ -38,9 +38,13 @@ github.com##a[data-tab-item="stars"][data-turbo-frame="user-profile-frame"]
 github.com##a[href$="/stargazers"]
 github.com##.search-results-page li:has(> a[href$="/stargazers"]) + span
 
-! Hide watchers
+! Hide repository watch count and watchers
 github.com###repo-notifications-counter
-github.com##.Layout-sidebar a:has(> .octicon-eye)
+github.com##a[href$="/watchers"]
+
+! Hide fork count (still accessible from the repository "about" section)
+github.com###repo-network-counter
+github.com##:is(#user-repositories-list, #org-repositories, .Popover) a[href$="/forks"]
 
 ! Hide user actions on hover cards
 github.com##.Popover [aria-label="User action buttons"]
