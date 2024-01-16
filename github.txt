@@ -51,6 +51,10 @@ github.com##.Popover [aria-label="User action buttons"]
 ! Hide metadata about pinned items
 github.com##.pinned-item-meta
 
+! Hide topics from the user and organization repositories list
+github.com###user-repositories-list .topics-row-container
+github.com###org-repositories div:has(> .topic-tag)
+
 ! Hide achievements
 github.com##.js-profile-editable-replace > div:has(.achievement-badge-sidebar)
 
