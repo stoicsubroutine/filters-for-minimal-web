@@ -27,3 +27,11 @@ I want to use Letterboxd to find films to watch, so only films and lists are kep
 ```
 https://raw.githubusercontent.com/oneironautd/filters-for-minimal-web/main/letterboxd.txt
 ``` 
+
+## YouTube
+
+I want to use YouTube to watch videos that I find online or to search for videos related to the topic at hand, so recommendations, feedback (likes and comments), subscriptions and other random distractions are removed. Also, I usually use YouTube without an account, so I removed the features that require an account, like download and save.
+
+```
+https://raw.githubusercontent.com/oneironautd/filters-for-minimal-web/main/youtube.txt
+``` 

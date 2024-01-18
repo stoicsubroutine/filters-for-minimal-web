@@ -1,0 +1,85 @@
+! Title: oneironautd's filters – Minimal YouTube
+! Description: Decluttered YouTube for finding and watching videos
+! Homepage: https://github.com/oneironautd/filters-for-minimal-web
+! Expires: 7 days
+
+! Hide sign in button
+www.youtube.com##ytd-button-renderer a[aria-label="Sign in"]
+
+! Hide create button
+www.youtube.com##.ytd-topbar-menu-button-renderer:has(> [aria-label="Create"]#button)
+
+! Hide notification button
+www.youtube.com##ytd-notification-topbar-button-renderer
+
+! Hide youtube paid memberships and studio from the account menu panel
+www.youtube.com##yt-multi-page-menu-section-renderer:has(a[href^="/paid_memberships"])
+
+! Hide sidebars
+www.youtube.com##ytd-mini-guide-renderer
+www.youtube.com###guide, #guide-button
+
+! Hide recommendations
+www.youtube.com###related
+www.youtube.com##[page-subtype="home"].ytd-page-manager
+www.youtube.com##.ytd-search :is(ytd-horizontal-card-list-renderer, ytd-shelf-renderer):has(#title:has-text(/People also watched|From related searches|People also search for/))
+
+! Hide shorts
+www.youtube.com##ytd-reel-shelf-renderer
+www.youtube.com##[tab-title="Shorts"].yt-tab-shape-wiz
+
+! Hide chip bar from search page
+www.youtube.com##.ytd-search-header-renderer#chip-bar
+
+! Hide social links from share menu
+www.youtube.com###share-targets
+
+! Hide verified badge
+www.youtube.com##.badge-style-type-verified
+
+! Hide download button from video drop-down actions
+www.youtube.com##ytd-menu-service-item-download-renderer
+
+! Hide subscribe button
+www.youtube.com###subscribe-button, #subscribe
+
+! Hide subscribers
+www.youtube.com###subscriber-count, #subscriber-count + .delimiter
+www.youtube.com###owner-sub-count
+www.youtube.com###video-count, #dot:has(+ #video-count)
+www.youtube.com##.ytd-about-channel-renderer.description-item:has-text(subscribers)
+www.youtube.com##.ytd-grid-channel-renderer#thumbnail-attribution
+
+! Hide sponsor button
+www.youtube.com###sponsor-button
+
+! Hide sponsors
+www.youtube.com##ytd-item-section-renderer:has(ytd-recognition-shelf-renderer)
+
+! Hide unnecessary tabs from the channel page (also hide the slider which will be broken due to this removal)
+www.youtube.com##[tab-title="Community"].yt-tab-shape-wiz
+www.youtube.com##[tab-title="Store"].yt-tab-shape-wiz
+www.youtube.com##.yt-tab-group-shape-wiz__slider
+
+! Hide branding over video
+www.youtube.com##.ytp-iv-player-content > .iv-branding
+
+! Hide like and dislike button
+www.youtube.com##.YtSegmentedLikeDislikeButtonViewModelHost
+
+! Hide buttons other than share from video page
+www.youtube.com##.ytd-watch-metadata > #flexible-item-buttons
+www.youtube.com##.ytd-watch-metadata > #button-shape > [aria-label="More actions"]
+
+! Hide infocards from description
+www.youtube.com##ytd-video-description-infocards-section-renderer
+
+! Hide comments and live chats
+www.youtube.com###comments
+www.youtube.com###chat-container
+
+! Hide hashtags
+www.youtube.com##a[href^="/hashtag"]
+
+! Hide playlist buttons like share, save and download
+www.youtube.com##.ytd-playlist-header-renderer.metadata-buttons-wrapper
