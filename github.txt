@@ -64,3 +64,8 @@ github.com##.Popover [aria-label="User pro badge"]
 
 ! Hide repository tabs on topic page
 github.com##.topic .tabnav
+
+! Hide sponsor button on topic page, organisation hovercards and search results page
+github.com##.topic a[href^="/sponsors"]
+github.com##div:has(> #sponsor-button-hovercard-org)
+github.com##.search-results-page [aria-label^="Sponsor"].Button
