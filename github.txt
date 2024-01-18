@@ -61,3 +61,6 @@ github.com##.js-profile-editable-replace > div:has(.achievement-badge-sidebar)
 ! Hide highlights and PRO badge
 github.com##.js-profile-editable-replace > div:has(> h2:has-text(Highlights))
 github.com##.Popover [aria-label="User pro badge"]
+
+! Hide repository tabs on topic page
+github.com##.topic .tabnav
