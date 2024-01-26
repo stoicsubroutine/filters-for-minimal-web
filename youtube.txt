@@ -12,6 +12,9 @@ www.youtube.com##.ytd-topbar-menu-button-renderer:has(> [aria-label="Create"]#bu
 ! Hide notification button
 www.youtube.com##ytd-notification-topbar-button-renderer
 
+! Hide voice search button
+www.youtube.com###voice-search-button
+
 ! Hide youtube paid memberships and studio from the account menu panel
 www.youtube.com##yt-multi-page-menu-section-renderer:has(a[href^="/paid_memberships"])
 
@@ -37,8 +40,9 @@ www.youtube.com###share-targets
 ! Hide verified badge
 www.youtube.com##.badge-style-type-verified
 
-! Hide download button from video drop-down actions
+! Hide video drop-down actions that require an account
 www.youtube.com##ytd-menu-service-item-download-renderer
+www.youtube.com##ytd-menu-service-item-renderer:has-text(/Save to Watch later|Save to playlist/)
 
 ! Hide subscribe button
 www.youtube.com###subscribe-button, #subscribe
