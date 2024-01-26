@@ -29,7 +29,7 @@ www.youtube.com##ytd-reel-shelf-renderer
 www.youtube.com##[tab-title="Shorts"].yt-tab-shape-wiz
 
 ! Hide chip bar from search page
-www.youtube.com##.ytd-search-header-renderer#chip-bar
+www.youtube.com##yt-chip-cloud-renderer.ytd-search-header-renderer
 
 ! Hide social links from share menu
 www.youtube.com###share-targets
