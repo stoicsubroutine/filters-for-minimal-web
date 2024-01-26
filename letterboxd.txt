@@ -1,6 +1,6 @@
-! Title: oneironautd's filters – Minimal Letterboxd
+! Title: stoicsubroutine's filters – Minimal Letterboxd
 ! Description: Letterboxd decluttered for film discovery
-! Homepage: https://github.com/oneironautd/filters-for-minimal-web
+! Homepage: https://github.com/stoicsubroutine/filters-for-minimal-web
 ! Expires: 7 days
 
 ! Hide sign-up, sign-in and promotions

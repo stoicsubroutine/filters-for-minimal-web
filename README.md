@@ -15,7 +15,7 @@ For uBlock Origin, go to the Filter Lists pane under Extension Settings, add the
 I want to use GitHub for collaborative software development. So I got rid of distractions like Feeds and Explore, social media features like Star and Follow, and gamification elements like Achievements and Highlights.
 
 ```
-https://raw.githubusercontent.com/oneironautd/filters-for-minimal-web/main/github.txt
+https://raw.githubusercontent.com/stoicsubroutine/filters-for-minimal-web/main/github.txt
 ``` 
 
 ## Letterboxd
@@ -25,7 +25,7 @@ I want to use Letterboxd to find films to watch, so only films and lists are kep
 **Note:** I don't have an account on Letterboxd because I don't need one for my purpose. So I am not sure how this filter list works when someone is logged in.
 
 ```
-https://raw.githubusercontent.com/oneironautd/filters-for-minimal-web/main/letterboxd.txt
+https://raw.githubusercontent.com/stoicsubroutine/filters-for-minimal-web/main/letterboxd.txt
 ``` 
 
 ## YouTube
@@ -33,5 +33,5 @@ https://raw.githubusercontent.com/oneironautd/filters-for-minimal-web/main/lette
 I want to use YouTube to watch videos that I find online or to search for videos related to the topic at hand, so recommendations, feedback (likes and comments), subscriptions and other random distractions are removed. Also, I usually use YouTube without an account, so I removed the features that require an account, like download and save.
 
 ```
-https://raw.githubusercontent.com/oneironautd/filters-for-minimal-web/main/youtube.txt
+https://raw.githubusercontent.com/stoicsubroutine/filters-for-minimal-web/main/youtube.txt
 ``` 

@@ -1,6 +1,6 @@
-! Title: oneironautd's filters – Minimal YouTube
+! Title: stoicsubroutine's filters – Minimal YouTube
 ! Description: Decluttered YouTube for finding and watching videos
-! Homepage: https://github.com/oneironautd/filters-for-minimal-web
+! Homepage: https://github.com/stoicsubroutine/filters-for-minimal-web
 ! Expires: 7 days
 
 ! Hide sign in button
