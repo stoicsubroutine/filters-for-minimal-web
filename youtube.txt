@@ -30,6 +30,7 @@ www.youtube.com##.ytd-search :is(ytd-horizontal-card-list-renderer, ytd-shelf-re
 ! Hide shorts
 www.youtube.com##ytd-reel-shelf-renderer
 www.youtube.com##[tab-title="Shorts"].yt-tab-shape-wiz
+www.youtube.com##ytd-video-renderer:has([overlay-style="SHORTS"])
 
 ! Hide chip bar from search page
 www.youtube.com##yt-chip-cloud-renderer.ytd-search-header-renderer
