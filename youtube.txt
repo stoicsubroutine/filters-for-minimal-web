@@ -25,7 +25,7 @@ www.youtube.com###guide, #guide-button
 ! Hide recommendations
 www.youtube.com###related
 www.youtube.com##[page-subtype="home"].ytd-page-manager
-www.youtube.com##.ytd-search :is(ytd-horizontal-card-list-renderer, ytd-shelf-renderer):has(#title:has-text(/People also watched|From related searches|People also search for|Channels new to you|For you/))
+www.youtube.com##.ytd-search :is(ytd-horizontal-card-list-renderer, ytd-shelf-renderer):has(#title:has-text(/People also watched|From related searches|People also search for|Channels new to you|For you|Top news|Popular today/))
 
 ! Hide shorts
 www.youtube.com##ytd-reel-shelf-renderer
