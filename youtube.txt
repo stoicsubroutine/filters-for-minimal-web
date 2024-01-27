@@ -65,6 +65,9 @@ www.youtube.com##[tab-title="Community"].yt-tab-shape-wiz
 www.youtube.com##[tab-title="Store"].yt-tab-shape-wiz
 www.youtube.com##.yt-tab-group-shape-wiz__slider
 
+! Centre the video until a side panel appears
+www.youtube.com##.ytd-watch-flexy#secondary:not(:has(ytd-engagement-panel-section-list-renderer[visibility="ENGAGEMENT_PANEL_VISIBILITY_EXPANDED"], #playlist:not([hidden=""])))
+
 ! Hide branding over video
 www.youtube.com##.ytp-iv-player-content > .iv-branding
 
