@@ -24,6 +24,9 @@ letterboxd.com###page-footer
 ! Hide popular contents from home page
 letterboxd.com##.home .popular-content + .cols-2
 
+! Hide "And the Oscar Goes to..." section
+letterboxd.com##.section:has(> .section-heading > [href^="/oscars"])
+
 ! Hide showdown
 letterboxd.com##.section:has(> a[href="/showdown/"])
 
